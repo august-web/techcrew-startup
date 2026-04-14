@@ -1,0 +1,20 @@
+:root {
+  color-scheme: light;
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-charcoal: #1a1a1a;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f4f4f5;
+  --color-text: #18181b;
+  --color-text-muted: #71717a;
+  --color-border: #e4e4e7;
+}
+
+.dark {
+  color-scheme: dark;
+  --color-surface: #000000;
+  --color-surface-alt: #09090b;
+  --color-text: #fafafa;
+  --color-text-muted: #a1a1aa;
+  --color-border: #27272a;
+}
