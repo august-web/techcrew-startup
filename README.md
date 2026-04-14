@@ -12,6 +12,7 @@ The site includes dedicated pages for:
 - Fields (Programming, Cybersecurity, AI, Robotics)
 - Projects
 - Team
+- Partner With Us
 - Contact
 
 ## Key Features
@@ -82,4 +83,3 @@ npm run build
 ```
 
 Build output generated successfully to `dist/index.html`.
-

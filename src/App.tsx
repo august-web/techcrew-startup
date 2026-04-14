@@ -8,6 +8,7 @@ import { ContactPage } from "@/pages/ContactPage";
 import { FieldsPage } from "@/pages/FieldsPage";
 import { HomePage } from "@/pages/HomePage";
 import { NotFoundPage } from "@/pages/NotFoundPage";
+import { PartnerPage } from "@/pages/PartnerPage";
 import { ProjectsPage } from "@/pages/ProjectsPage";
 import { TeamPage } from "@/pages/TeamPage";
 
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/fields" element={<FieldsPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/team" element={<TeamPage />} />
+          <Route path="/partner" element={<PartnerPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>

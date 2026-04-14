@@ -34,10 +34,10 @@ export function CommunityCtaSection() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
             <Link
-              to="/projects"
+              to="/partner"
               className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-700 px-6 py-3.5 text-sm font-semibold text-zinc-300 transition-all hover:border-zinc-500 hover:bg-zinc-800 hover:text-white"
             >
-              View Projects
+              Partner With Us
             </Link>
           </div>
         </div>
