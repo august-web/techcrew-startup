@@ -80,7 +80,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-zinc-200 pt-6 dark:border-zinc-800 sm:flex-row">
           <p className="text-xs text-zinc-500 dark:text-zinc-500">
-            © {currentYear} TechCrew. All rights reserved.
+            &copy; {currentYear} TechCrew. All rights reserved.
           </p>
           <p className="text-xs text-zinc-500 dark:text-zinc-500">
             Built with passion for innovation
@@ -90,3 +90,4 @@ export function Footer() {
     </footer>
   );
 }
+
