@@ -1,4 +1,4 @@
-import { ArrowRight, Building2, GraduationCap, Handshake, Landmark, Sparkles, Users } from "lucide-react";
+import { ArrowRight, Building2, ExternalLink, GraduationCap, Handshake, Landmark, Sparkles, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionIntro } from "@/components/ui/SectionIntro";
@@ -50,6 +50,16 @@ const processSteps = [
   "Co-create a custom partnership plan",
   "Launch programs, events, or project tracks",
   "Measure outcomes and scale what works",
+];
+
+const currentPartnerships = [
+  {
+    name: "Chambey",
+    href: "https://chambey.org/",
+    summary:
+      "Our first official collaboration supporting youth innovation, practical learning, and growth-focused community impact.",
+    status: "Active",
+  },
 ];
 
 export function PartnerPage() {
@@ -127,6 +137,39 @@ export function PartnerPage() {
               <article className="rounded-2xl border border-zinc-200 bg-zinc-50 p-7 dark:border-zinc-800 dark:bg-zinc-900/50">
                 <h3 className="mb-3 text-xl font-semibold text-zinc-950 dark:text-zinc-100">{item.title}</h3>
                 <p className="leading-relaxed text-zinc-600 dark:text-zinc-300">{item.description}</p>
+              </article>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="space-y-8">
+        <Reveal>
+          <SectionIntro
+            eyebrow="Current Partnership"
+            title="Our first collaboration is now live"
+            description="We are proud to begin our partnership journey with Chambey."
+          />
+        </Reveal>
+
+        <div className="grid gap-5 md:max-w-3xl">
+          {currentPartnerships.map((partner, index) => (
+            <Reveal key={partner.name} delay={index * 0.08}>
+              <article className="rounded-2xl border border-zinc-200 bg-white p-7 shadow-sm dark:border-zinc-800 dark:bg-zinc-900/60">
+                <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-700 dark:border-emerald-500/30 dark:bg-emerald-500/10 dark:text-emerald-300">
+                  {partner.status}
+                </div>
+                <h3 className="mb-3 text-2xl font-bold text-zinc-950 dark:text-zinc-100">{partner.name}</h3>
+                <p className="mb-5 leading-relaxed text-zinc-600 dark:text-zinc-300">{partner.summary}</p>
+                <a
+                  href={partner.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-blue-500 transition-colors hover:text-blue-400"
+                >
+                  Visit {partner.name}
+                  <ExternalLink className="h-4 w-4" />
+                </a>
               </article>
             </Reveal>
           ))}
